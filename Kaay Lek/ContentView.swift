@@ -10,12 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ZStack {
+                Image("herobanner")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 250)
+                    .clipped()
+                Text("Kaay Lek")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+            }
+            //.edgesIgnoringSafeArea(.top)
+            .padding(.top, 0)
+                        
+          
+        
         }
-        .padding()
+        
+
+        
     }
 }
 
